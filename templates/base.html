@@ -1,4 +1,11 @@
 <!-- templates/base.html-->
+{% load static %}
+<html>
+    <head>
+        <title>EventGearSauce</title>
+        <link href="https://fonts.googleapis.com/css?family=Kanit:400" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" rel="stylesheet">
+    </head>
 <header>
     <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'about' %}">About Us</a>

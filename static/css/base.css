@@ -1,0 +1,32 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+header h1 a {
+    color: darkred;
+    text-decoration: none;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+}
+
+a {
+    color: darkred;
+}
+
+a:visited {
+    color: lightcoral
+}
