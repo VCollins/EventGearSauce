@@ -6,10 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Kanit:400" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}" rel="stylesheet">
     </head>
-<header>
-    <a href="{% url 'home' %}">&nbsp Home &nbsp</a>
-    <a href="{% url 'about' %}">&nbsp About Us &nbsp</a>
-    <a href="{% url 'contact' %}">&nbsp Contact Us &nbsp</a>
-</header>
-
-{% block content %}{% endblock content %}
+    <header>
+        <div class="nav">
+            <div class="nav-right">
+                <a href="{% url 'home' %}">&nbsp Home &nbsp</a>
+                <a href="{% url 'about' %}">&nbsp About Us &nbsp</a>
+                <a href="{% url 'contact' %}">&nbsp Contact Us &nbsp</a>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock content %}
+</html>

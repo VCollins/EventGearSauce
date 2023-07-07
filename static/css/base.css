@@ -1,32 +1,68 @@
 body {
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
+    background-color: #bbb;
 }
 
 header {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #bbb;
     margin-bottom: 2rem;
     display: flex;
 }
 
 header h1 a {
-    color: darkred;
+    color: darkslateblue;
     text-decoration: none;
 }
 
+.nav {
+    background-color: navy;
+    overflow: hidden;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    color: #bbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: navy;
+    color: #888;
+}
+
+.topnav a.active {
+    background-color: blue;
+    color: #ddd;
+}
+
 .nav-left {
-    margin-right: auto;
+    float: left;
 }
 
 .nav-right {
-    display: flex;
-    padding-top: 2rem;
+    float: right;
 }
 
 a {
-    color: darkred;
+    color: #888;
+    text-align: center;
 }
 
 a:visited {
-    color: lightcoral
+    color: #bbb;
+}
+
+p {
+    color: darkslateblue;
+}
+
+h1 {
+    color: darkslateblue;
 }
