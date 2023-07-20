@@ -56,7 +56,7 @@ a {
 }
 
 a:visited {
-    color: #bbb;
+    color: #48a;
 }
 
 p {
@@ -65,4 +65,13 @@ p {
 
 h1 {
     color: darkslateblue;
+}
+
+.item-entry h2 a {
+    color: darkslateblue;
+}
+
+.item-entry h2 a:visited {
+    color: #48a;
+    text-decoration: none;
 }

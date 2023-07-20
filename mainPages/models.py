@@ -7,9 +7,9 @@ from django.urls import reverse
 class EquipmentStock(models.Model):
     manufacturer = models.CharField(max_length=50)
     model_name = models.CharField(max_length=100)
-    description = models.CharField(max_length=100)
+    description = models.CharField(max_length=100, default=None)
     serial_number = models.CharField(max_length=13)
-    amount_available = models.IntegerField()
+    amount_available = models.IntegerField(default=0)
 
     def __str__(self):
         return str(self.manufacturer) + " " + str(self.model_name)

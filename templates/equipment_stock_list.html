@@ -3,12 +3,16 @@
 
 {% block content %}
 <h1>Equipment available for hire</h1>
-{% for equipment_stock_item in equipment_stock_list %}
-    <div class="">
-        <h2><a href="{% url 'equipment_stock_detail' equipment_stock_item.pk %}">{{ equipment_stock_item.model_name }}</a></h2>
-        <p>Manufacturer:&nbsp{{ equipment_stock_item.manufacturer }}</p>
-        <br />
-        <p>{{ equipment_stock_item.description }}</p>
-    </div>
+<br />
+<ul>
+{% for EquipmentStock in object_list %}
+    <li>
+        <div class="item-entry">
+            <h2><a href="{% url 'equipment_stock_detail' EquipmentStock.pk %}">{{ EquipmentStock.model_name }}</a></h2>
+            <p>Manufacturer:&nbsp{{ EquipmentStock.manufacturer }}</p>
+            <p>{{ EquipmentStock.description }}</p>
+        </div>
+    </li>
 {% endfor %}
+</ul>
 {% endblock content%}
