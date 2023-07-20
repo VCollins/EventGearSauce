@@ -1,0 +1,10 @@
+<!-- templates/equipment_stock_detail.html-->
+{% extends "base.html"%}
+
+{% block content %}
+<div class="">
+    <h2>{{ equipment_stock_item.model_name }}</h2>
+    <p>Manufacturer:&nbsp{{ equipment_stock_item.manufacturer }}</p>
+    <p>{{ equipment_stock_item.description }}</p>
+</div>
+{% endblock content%}
