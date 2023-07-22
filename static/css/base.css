@@ -11,12 +11,12 @@ header {
 }
 
 header h1 a {
-    color: darkslateblue;
+    color: #028;
     text-decoration: none;
 }
 
 .nav {
-    background-color: navy;
+    background-color: #97f;
     overflow: hidden;
     padding-top: 2rem;
     width: 100%;
@@ -33,7 +33,7 @@ header h1 a {
 }
 
 .topnav a:hover {
-    background-color: navy;
+    background-color: #97f;
     color: #888;
 }
 
@@ -44,6 +44,7 @@ header h1 a {
 
 .nav-left {
     float: left;
+    margin-right: auto;
 }
 
 .nav-right {
@@ -56,22 +57,22 @@ a {
 }
 
 a:visited {
-    color: #48a;
+    color: #048;
 }
 
 p {
-    color: darkslateblue;
+    color: #028;
 }
 
 h1 {
-    color: darkslateblue;
+    color: #028;
 }
 
 .item-entry h2 a {
-    color: darkslateblue;
+    color: #028;
 }
 
 .item-entry h2 a:visited {
-    color: #48a;
+    color: #048;
     text-decoration: none;
 }
