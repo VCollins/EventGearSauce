@@ -4,6 +4,10 @@
 {% block content %}
 <h1>Equipment available for hire</h1>
 <br />
+<div>
+    <a href="{% url 'equipment_stock_new' %}">+ Add New Equipment</a>
+</div>
+<br />
 <ul>
 {% for EquipmentStock in object_list %}
     <li>

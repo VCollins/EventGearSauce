@@ -7,4 +7,12 @@
     <p>Manufacturer:&nbsp{{ object.manufacturer }}</p>
     <p>{{ object.description }}</p>
 </div>
+<br />
+<div>
+    <a href="{% url 'equipment_stock_edit' object.pk %}">+ Edit Equipment Item</a>
+</div>
+<br />
+<div>
+    <a href="{% url 'equipment_stock_delete' object.pk %}">+ Delete Equipment Item</a>
+</div>
 {% endblock content%}
