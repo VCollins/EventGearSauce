@@ -28,6 +28,20 @@ class EquipmentStockTests(TestCase):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
 
+    def test_url_exists_at_correct_location_detailview(self):
+        response = self.client.get("/equipment_stock_detail/1")
+        self.assertEqual(response.status_code, 200)
+
+    def test_equipment_stock_detailview(self):
+        response = self.client.get(
+            reverse("equipment_stock_detail", kwargs={"pk": self.equipmentstock.pk})
+        )
+        no_response = self.client.get("/equipment_stock/100000/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(no_response.status_code, 404)
+        self.assertContains(response, "Shure")
+        self.assertTemplateUsed(response, "equipment_stock_detail.html")
+
     def test_homepage(self):
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)

@@ -13,10 +13,12 @@ from .views import (
 urlpatterns = [
     path("", HomePageView.as_view(), name="home"),
     path(
-        "equipment_stock", EquipmentStockListView.as_view(), name="equipment_stock_list"
+        "equipment_stock_list",
+        EquipmentStockListView.as_view(),
+        name="equipment_stock_list",
     ),
     path(
-        "equipment_stock/<int:pk>",
+        "equipment_stock_detail/<int:pk>",
         EquipmentStockDetailView.as_view(),
         name="equipment_stock_detail",
     ),
