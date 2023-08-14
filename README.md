@@ -6,4 +6,4 @@ The development approach followed will use site-wide static files (CSS, JS & ima
 So far, basic CRUD pages exist for creating, viewing, updating and deleting sound equipment on the site. User authentication and credentials will eventually be implemented to 
 control access to site actions.
 
-Thanks to [William S. Vincent](https://github.com/wsvincent) for his book series on Django development.
+Thanks to [William S. Vincent](https://github.com/wsvincent) for his book series on Django development, and [TechWithTim](https://www.youtube.com/@TechWithTim) for the helpful videos on Django-oriented topics.
