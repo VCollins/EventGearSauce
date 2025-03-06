@@ -1,6 +1,2 @@
-./eventGearSauceVENV
-/eventGearSauceVENV
-.eventGearSauceVENV/
-./vscode
-/vscode
-.vscode/
+env/
+*.pyc
