@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'corsheaders',
-    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
