@@ -10,7 +10,7 @@ function Quotation({ quotation, onDelete }) {
             <p className="quotation-client">{quotation.client}</p>
             <p className="quotation-equipment">{quotation.equipment}</p>
             <p className="quotation-total_quote_amount">{quotation.total_quote_amount}</p>
-            <button className="delete-button" onClick={() => onDelete(equipmentstockitem.id)}>
+            <button className="delete-button" onClick={() => onDelete(quotation.quote_number)}>
                 Delete
             </button>
         </div>
