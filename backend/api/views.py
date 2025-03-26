@@ -11,8 +11,7 @@ class EquipmentStockItemListCreate(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        user = self.request.user
-        return EquipmentStockItem.objects.filter(creator=user)
+        return EquipmentStockItem.objects.all()
     
     def perform_create(self, serializer):
         if serializer.is_valid():
@@ -25,9 +24,8 @@ class QuotationListCreate(generics.ListCreateAPIView):
     serializer_class = QuotationSerializer
     permission_classes = [IsAuthenticated]
 
-    def get_queryset(self):
-        user = self.request.user
-        return EquipmentStockItem.objects.filter(creator=user)
+    def get_queryset(self):        
+        return Quotation.objects.all()
     
     def perform_create(self, serializer):
         if serializer.is_valid():
