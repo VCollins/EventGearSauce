@@ -1,5 +1,6 @@
 function Home() {
-    return <div>
+    return <div>        
+        <br />
         <h1>The premier sound equipment rental specialists</h1>
         <br />
         <p>
